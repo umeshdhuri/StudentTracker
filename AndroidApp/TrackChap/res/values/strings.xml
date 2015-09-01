@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BusTracker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+<!--         <item>Edit Location</item>
+ -->      
+ 
+  <item>Notification</item>        
+
+<!--         <item>Attendance</item>
+ -->      
+   <item>Contact Us</item>
+        <item>Take A Tour</item>
+        <item>Logout</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@android:drawable/ic_menu_save</item>
+        <item>@android:drawable/ic_menu_save</item>
+        <item>@android:drawable/ic_menu_save</item>
+        <item>@android:drawable/ic_media_play</item>
+        <item>@android:drawable/ic_menu_save</item>
+        <item>@android:drawable/ic_menu_save</item>
+    </array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_farecharge">Farecharge</string>
+    <string name="rs100">\u20B9100</string>
+    <string name="rs15">\u20B915 per Kms</string>
+    <string name="rs2">\u20B92 per min</string>
+    <string name="rs500">\u20B9 500</string>
+    <string name="rs2000">\u20B9 2000</string>
+    <string name="rs5000">\u20B9 5000</string>
+    <string name="title_activity_loginpage">Loginpage</string>
+    <string name="title_activity_login_">Login_Activity</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <string name="reachhome">Student Reach Home</string>
+    <string name="title_activity_contactus__admin">Contact Us</string>
+    <string name="title_activity_edit_profile__first_time">Update Location</string>
+    <string name="clear">Clear</string>
+    
+</resources>

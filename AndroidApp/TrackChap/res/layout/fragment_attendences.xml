@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,ContentDescription,InefficientWeight" >
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+             android:layout_weight="2"
+             android:layout_margin="6dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#393b40"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="3dp" >
+ <RelativeLayout
+            android:id="@+id/previous"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true" >
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:padding="3dp"
+                android:src="@drawable/left_arrow" />
+</RelativeLayout>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.81"
+                android:gravity="center"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff" />
+ <RelativeLayout
+            android:id="@+id/next"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true" >
+            
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:padding="3dp"
+                android:src="@drawable/right_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dadde1"
+                android:weightSum="7" >
+
+                <TextView
+                    android:id="@+id/sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sun"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="#969695"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                     />
+
+                <TextView
+                    android:id="@+id/mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                   android:gravity="center"
+                    android:textColor="#969695" android:text="Mon"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/tue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                   android:gravity="center"
+                    android:textColor="#969695"
+                     android:text="Tue"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/wed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:gravity="center"
+                    android:textColor="#969695"
+                     android:layout_weight="1"
+                    android:text="Wed"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/thu"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#969695"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Thu"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/fri"
+                    android:layout_width="wrap_content"
+                  android:gravity="center"
+                    android:textColor="#969695"
+                      android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fri"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:gravity="center"
+                    android:textColor="#969695"
+                      android:layout_weight="1"
+                    android:text="Sat"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                <GridView
+        android:id="@+id/gridview"
+        android:layout_below="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="7"
+        android:stretchMode="columnWidth" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+       
+
+    </LinearLayout>
+    </LinearLayout>
+ <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:weightSum="3"
+         android:padding="5dp" 
+         android:gravity="center"
+         android:layout_marginLeft="8dp"
+         android:orientation="horizontal" >
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center" >
+
+             
+
+             <ImageView
+                 android:id="@+id/Present_img"
+                android:layout_width="20dp"
+                 android:layout_height="20dp"
+                />
+<TextView
+                 android:id="@+id/present"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Present"
+                 android:textSize="16sp"
+                 android:layout_marginLeft="5dp"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+         </LinearLayout>
+  <LinearLayout
+             android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:layout_height="match_parent" >
+
+             
+
+             <ImageView
+                 android:id="@+id/absent_img"
+                android:layout_width="20dp"
+                 android:layout_height="20dp"
+                />
+<TextView
+                 android:id="@+id/absent"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                                 android:textSize="16sp"
+                 android:text="Absent"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+         </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center" >
+
+      <ImageView
+          android:id="@+id/hoilday_img"
+          android:layout_width="20dp"
+          android:layout_height="20dp" />
+
+      <TextView
+          android:id="@+id/hoilday"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+                          android:textSize="16sp"
+          android:text="Hoilday"
+          android:textAppearance="?android:attr/textAppearanceSmall" />
+  </LinearLayout>
+
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:weightSum="2"
+                  android:layout_marginLeft="8dp"
+         android:padding="8dp" 
+         android:gravity="center"
+         android:orientation="horizontal" >
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center" >
+
+             
+
+             <ImageView
+                 android:id="@+id/weekly_hoilday_img"
+               android:layout_width="20dp"
+                 android:layout_height="20dp"
+                 />
+<TextView
+                 android:id="@+id/weekly_holiday"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                                   android:textSize="16sp"
+                                 android:layout_marginLeft="5dp"
+                 android:text="Weekly Hoilday"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+         </LinearLayout>
+  <LinearLayout
+             android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:layout_height="match_parent" >
+
+             
+
+             <ImageView
+                 android:id="@+id/notapplicable_img"
+              android:layout_width="20dp"
+                 android:layout_height="20dp"
+                 />
+<TextView
+                 android:id="@+id/notapp"
+                                  android:textSize="16sp"
+                 android:layout_width="wrap_content"
+                                android:layout_marginLeft="5dp"
+                 android:layout_height="wrap_content"
+                 android:text="Not Applicable"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+         </LinearLayout>
+     </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

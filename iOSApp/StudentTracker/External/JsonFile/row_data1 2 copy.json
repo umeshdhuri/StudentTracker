@@ -1,0 +1,47 @@
+{
+   "apiVersion":"2.1",
+   "data": {
+             "Country":[
+                 { "Name":"Arizona",
+                   "Locations":[
+                                {"name":"Tucson AZ"},
+                              ],
+                   "Address":[
+                               {"name":"Tucson, AZ 85741
+                                        (520) 579-0377
+                                        Open Mon-Sat 8-6 / Sun 9-5
+                                       Store Manager: Mr. Kenroy Campbell"},                               
+                             ],
+                },
+               { "Name":"California",
+                  "Locations":[
+                                {"name":"Madera CA*"},
+                                {"name":"Petaluma CA (601 E. Washington St.)"},
+                                {"name":"Petaluma CA (1004 Lakeville St.)"},
+                                {"name":"Rohnert Park CA (6111 Redwood Dr.)"},
+                                {"name":"San Jose CA"}
+                                {"name":"San Mateo CA"}
+                                {"name":"Rohnert Park CA (5070 Redwood Dr.)"}
+
+
+                              ],
+                   "cartype":[
+                               {"name":"Hatchback"},
+                               {"name":"Sedan"}
+                               
+                             ],
+                    "engine":[
+                               {"name":"4Cyl 1.8 Liter"}
+                               
+                              
+                             ],
+                    "drivetype":[
+                                  {"name":"Front Wheel Drive"}
+                                  
+                                ]               
+                }
+               
+
+              ]
+         }
+}

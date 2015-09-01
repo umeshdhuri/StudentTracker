@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/progres"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:gravity="center"
+>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:id="@+id/accept_it"
+            
+            android:visibility="visible">
+
+            
+ <ProgressBar
+        android:id="@+id/barTimer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="273dp"
+        android:layout_centerInParent="true"  
+        android:indeterminate="false"
+        android:max="16"
+        android:progress="-1"
+        android:progressDrawable="@drawable/timer" />
+
+            <TextView
+                android:id="@+id/timer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/barTimer"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:text="Accepts it within 15 sec"
+                android:gravity="center"
+                 android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/timer_text_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Timer Text"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+		</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ola_cab_driver.MainActivity" >
+
+ <item
+        android:id="@+id/title_menu"
+        android:title=""
+        android:icon="@drawable/imgo"
+        android:showAsAction="ifRoom|withText"
+    />
+  
+</menu>

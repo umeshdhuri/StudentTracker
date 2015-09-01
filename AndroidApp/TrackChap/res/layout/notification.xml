@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <ListView
+        android:id="@+id/notification_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/No_noti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Notification Found"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>
