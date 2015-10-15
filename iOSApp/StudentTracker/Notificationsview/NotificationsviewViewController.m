@@ -88,7 +88,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CGSize maximumStatusMsgLabelSize ;
-    maximumStatusMsgLabelSize = CGSizeMake(250,200);
+    maximumStatusMsgLabelSize = CGSizeMake(250,800);
     Notifications *notiData = [notificationData objectAtIndex:indexPath.row] ;
     CGFloat height = 0;
     CGSize expectedTaskTitleLabelSize = [notiData.message sizeWithFont:[UIFont fontWithName:@"Gotham-Book" size:17]  constrainedToSize:maximumStatusMsgLabelSize lineBreakMode:NSLineBreakByWordWrapping];
@@ -110,7 +110,7 @@
     Notifications *notiData = [notificationData objectAtIndex:indexPath.row] ;
     
     CGSize maximumStatusMsgLabelSize ;
-    maximumStatusMsgLabelSize = CGSizeMake(250,200);
+    maximumStatusMsgLabelSize = CGSizeMake(250,800);
     CGRect msgFrame = cell.msgLbl.frame ;
     [cell.msgLbl setText:notiData.message] ;
     CGSize expectedMessageLabelSize = [cell.msgLbl.text sizeWithFont:cell.msgLbl.font constrainedToSize:maximumStatusMsgLabelSize lineBreakMode:cell.msgLbl.lineBreakMode];

@@ -76,6 +76,14 @@
                 CGRect imageViewFrame = self.fourthImgView.frame ;
                 imageViewFrame.size.height = self.fourthImgView.frame.size.height - 80 ;
                 self.fourthImgView.frame = imageViewFrame ;
+                
+               /* CGRect dontshowLblFrame = self.dontshowLbl.frame ;
+                dontshowLblFrame.origin.y = self.fourthImgView.frame.origin.y + self.fourthImgView.frame.size.height + 10 ;
+                self.dontshowLbl.frame = dontshowLblFrame ;
+                
+                CGRect checkBoxFrame = self.checkBoxBtn.frame ;
+                checkBoxFrame.origin.y = self.dontshowLbl.frame.origin.y ;
+                self.checkBoxBtn.frame = checkBoxFrame ;*/
             }
             
             [self.checkBoxBtn setImage:[UIImage imageNamed:@"chkbox_off.png"] forState:UIControlStateNormal] ;

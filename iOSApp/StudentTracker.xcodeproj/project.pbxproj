@@ -81,6 +81,8 @@
 		C4495F2D1B2858E2002FCEA7 /* red_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4495F2B1B2858E2002FCEA7 /* red_arrow@2x.png */; };
 		C4495F301B285BC6002FCEA7 /* chkbox_off.png in Resources */ = {isa = PBXBuildFile; fileRef = C4495F2E1B285BC6002FCEA7 /* chkbox_off.png */; };
 		C4495F311B285BC6002FCEA7 /* chkbox_on.png in Resources */ = {isa = PBXBuildFile; fileRef = C4495F2F1B285BC6002FCEA7 /* chkbox_on.png */; };
+		C4521F051BB24FF60071FE7E /* AccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4521F031BB24FF50071FE7E /* AccessViewController.m */; };
+		C4521F061BB24FF60071FE7E /* AccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4521F041BB24FF50071FE7E /* AccessViewController.xib */; };
 		C4541B851B1D7C01006E724D /* NotificationData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4541B831B1D7C01006E724D /* NotificationData.xcdatamodeld */; };
 		C4541B881B1D7D03006E724D /* Notifications.m in Sources */ = {isa = PBXBuildFile; fileRef = C4541B871B1D7D03006E724D /* Notifications.m */; };
 		C4541B8B1B1D7D51006E724D /* DatabaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4541B8A1B1D7D51006E724D /* DatabaseController.m */; };
@@ -275,6 +277,9 @@
 		C4495F2B1B2858E2002FCEA7 /* red_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red_arrow@2x.png"; path = "StudentTracker/Images/Tutorial/red_arrow@2x.png"; sourceTree = "<group>"; };
 		C4495F2E1B285BC6002FCEA7 /* chkbox_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chkbox_off.png; path = StudentTracker/Images/Tutorial/chkbox_off.png; sourceTree = "<group>"; };
 		C4495F2F1B285BC6002FCEA7 /* chkbox_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chkbox_on.png; path = StudentTracker/Images/Tutorial/chkbox_on.png; sourceTree = "<group>"; };
+		C4521F021BB24FF50071FE7E /* AccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccessViewController.h; path = StudentTracker/SignInScreen/AccessViewController.h; sourceTree = "<group>"; };
+		C4521F031BB24FF50071FE7E /* AccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccessViewController.m; path = StudentTracker/SignInScreen/AccessViewController.m; sourceTree = "<group>"; };
+		C4521F041BB24FF50071FE7E /* AccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccessViewController.xib; path = StudentTracker/SignInScreen/AccessViewController.xib; sourceTree = "<group>"; };
 		C4541B841B1D7C01006E724D /* NotificationData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotificationData.xcdatamodel; sourceTree = "<group>"; };
 		C4541B861B1D7D03006E724D /* Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notifications.h; path = StudentTracker/Notification/Database/Notifications.h; sourceTree = "<group>"; };
 		C4541B871B1D7D03006E724D /* Notifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Notifications.m; path = StudentTracker/Notification/Database/Notifications.m; sourceTree = "<group>"; };
@@ -562,6 +567,9 @@
 				C4495F251B2855DF002FCEA7 /* ContactUsViewController.h */,
 				C4495F261B2855DF002FCEA7 /* ContactUsViewController.m */,
 				C4495F271B2855DF002FCEA7 /* ContactUsViewController.xib */,
+				C4521F021BB24FF50071FE7E /* AccessViewController.h */,
+				C4521F031BB24FF50071FE7E /* AccessViewController.m */,
+				C4521F041BB24FF50071FE7E /* AccessViewController.xib */,
 			);
 			name = SignInScreen;
 			sourceTree = "<group>";
@@ -1033,6 +1041,7 @@
 				C4495F2C1B2858E2002FCEA7 /* red_arrow.png in Resources */,
 				C466E3B31B2F175F009413BE /* chkbox_off@2x.png in Resources */,
 				C4232AD11B94A39C00E9E45E /* 180x180.png in Resources */,
+				C4521F061BB24FF60071FE7E /* AccessViewController.xib in Resources */,
 				C4DDDF621B2E8F48002F1D58 /* TutorialScreen4.jpg in Resources */,
 				C4495F291B2855DF002FCEA7 /* ContactUsViewController.xib in Resources */,
 				C4FAA78E1B187ADC00ABACC8 /* NotificationTableViewCell.xib in Resources */,
@@ -1117,6 +1126,7 @@
 				C4A613C51B16052C00E85DB7 /* SDWebImageDownloader.m in Sources */,
 				C45E952D1B4163F800B6B96C /* CKCalendarView.m in Sources */,
 				C4A613C31B16052C00E85DB7 /* SDWebImageCompat.m in Sources */,
+				C4521F051BB24FF60071FE7E /* AccessViewController.m in Sources */,
 				C408BB1D1B0DA65C0097AF96 /* FirstTutorialViewController.m in Sources */,
 				C437E1D11B32825C00810C17 /* PintCurrentLocationViewController.m in Sources */,
 				C4A613CD1B16052C00E85DB7 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1275,14 +1285,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Umesh Dhuri";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Umesh Dhuri";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Umesh Dhuri (VSGD98SL75)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Umesh Dhuri (VSGD98SL75)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StudentTracker/StudentTracker-Prefix.pch";
 				INFOPLIST_FILE = "StudentTracker/StudentTracker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = BusTracker;
-				PROVISIONING_PROFILE = "6e3212a7-791d-499e-90b8-688967b2cac0";
+				PROVISIONING_PROFILE = "16102c4f-443d-4f06-94ee-13afb1dddbcc";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1292,14 +1302,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Umesh Dhuri";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Umesh Dhuri";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Umesh Dhuri (VSGD98SL75)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Umesh Dhuri (VSGD98SL75)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StudentTracker/StudentTracker-Prefix.pch";
 				INFOPLIST_FILE = "StudentTracker/StudentTracker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = BusTracker;
-				PROVISIONING_PROFILE = "6e3212a7-791d-499e-90b8-688967b2cac0";
+				PROVISIONING_PROFILE = "16102c4f-443d-4f06-94ee-13afb1dddbcc";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

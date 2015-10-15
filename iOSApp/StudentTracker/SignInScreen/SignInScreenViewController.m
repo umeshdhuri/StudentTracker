@@ -11,6 +11,7 @@
 #import "HomeScreenViewController.h"
 #import "ContactUsViewController.h"
 #import "PintCurrentLocationViewController.h"
+#import "AccessViewController.h"
 
 @interface SignInScreenViewController ()
 
@@ -53,6 +54,8 @@
     
     // Do any additional setup after loading the view from its nib.
 }
+
+
 -(void)tappclick
 {
     [_phoneTxt resignFirstResponder];
@@ -67,7 +70,7 @@
     
     
     if (!(self.phoneTxt.text.length >0)) {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Student Tracker" message:@"Please enter the phone number" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:AppName message:@"Please enter the phone number" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }else{
         NSLog(@"signin clicked");
@@ -88,8 +91,11 @@
                 if ([status intValue]==1) {
                     [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
                     NSDictionary *dataVal = [responseObject objectForKey:@"data"];
-                    studentLoginAlert=[[UIAlertView alloc]initWithTitle:AppName message:[dataVal valueForKey:@"message"] delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil];
-                    [studentLoginAlert show];
+                   /* studentLoginAlert=[[UIAlertView alloc]initWithTitle:AppName message:[dataVal valueForKey:@"message"] delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil];
+                    [studentLoginAlert show];*/
+                    AccessViewController *accessView = [[AccessViewController alloc] init];
+                    accessView.phoneNumberVal = self.phoneTxt.text ;
+                    [self.navigationController pushViewController:accessView animated:YES] ;
                     
                 }else{
                     [MBProgressHUD hideAllHUDsForView:self.view animated:YES];

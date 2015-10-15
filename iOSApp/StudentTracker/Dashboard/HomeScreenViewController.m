@@ -299,6 +299,10 @@
                 float sourceDict = [self getTotalTimeDifferenceForPlace:checkCloseSource destination:sourceCoordinates];
                 
                 float destinationDict = [self getTotalTimeDifferenceForPlace:checkCloseSource destination:destinationCoordinates];
+                
+                NSLog(@"sourceDict == %f", sourceDict) ;
+                NSLog(@"destinationDict == %f", destinationDict) ;
+                
                 if (sourceDict < destinationDict) {
                     towardsValue = @"Destination";
                 }else if(sourceDict > destinationDict){
@@ -404,7 +408,7 @@
     float time = ((distance / 1000) / 30) * 60 ;
     NSLog(@"time === %f",time) ;
     distanceRemain = distance / 1000 ;
-    
+    NSLog(@"towardsValue === %@", towardsValue) ;
     if([towardsValue isEqualToString:@"Destination"]) {
         [self.toFromTxt setText:@"School to Home"];
     }else {

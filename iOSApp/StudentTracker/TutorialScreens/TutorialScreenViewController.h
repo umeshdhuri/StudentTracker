@@ -20,4 +20,5 @@
 @property (nonatomic, weak) IBOutlet UIButton *checkBoxBtn;
 @property (nonatomic, readwrite) BOOL dontshowagain ;
 @property (nonatomic, weak)  IBOutlet UIImageView *fourthImgView ;
+@property (nonatomic, weak) IBOutlet UILabel *dontshowLbl ;
 @end
